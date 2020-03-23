@@ -1,0 +1,54 @@
+@font-face {
+  font-family: atari;
+  src: url("../assets/fonts/AtariClassicChunky.ttf");
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+  touch-action: manipulation;
+}
+.resultRoot {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffe53b;
+  background-image: linear-gradient(147deg, #ffe53b 0%, #ff2525 74%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.resultCard {
+  position: relative;
+  border-radius: 12px;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+}
+h1 {
+  font-family: atari;
+  font-size: 24px;
+  color: #27ae60;
+}
+h2 {
+  font-family: atari;
+  font-size: 18px;
+}
+.gameName {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 20%);
+  z-index: 99;
+  font-size: 32px;
+  color: white;
+}
