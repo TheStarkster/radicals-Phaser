@@ -34,8 +34,14 @@ class playGame extends Phaser.Scene {
     super("PlayGame");
   }
   preload() {
-    this.load.image("ship", "ship.png");
-    this.load.image("barrier", "barrier.png");
+    this.load.image(
+      "ship",
+      "http://games.ibigplay.com/radicals/assets/ship.png"
+    );
+    this.load.image(
+      "barrier",
+      "http://games.ibigplay.com/radicals/assets/barrier.png"
+    );
   }
   create() {
     this.ship = this.physics.add.sprite(
