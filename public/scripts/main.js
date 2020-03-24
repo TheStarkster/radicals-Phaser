@@ -13,8 +13,8 @@ window.onload = function() {
       mode: Phaser.Scale.FIT,
       autoCenter: Phaser.Scale.CENTER_BOTH,
       parent: "thegame",
-      width: 320,
-      height: 480
+      width: window.outerWidth,
+      height: window.outerHeight
     },
     scene: playGame,
     physics: {
